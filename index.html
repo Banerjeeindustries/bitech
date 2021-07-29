@@ -1,7 +1,8 @@
  <!DOCTYPE html>
 <html>
     <head>
-      <link rel="stylesheet" href="background_styles.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="tech.css">
       <script src="script.js" defer></script>
       <title>B.I. TECH SOLUTIONS (IMPORT & EXPORT)</title>
@@ -30,15 +31,25 @@
         </div>
       </nav>
 </header>
-<section id="home"> 
-<div class="banner-img"></div>
-	<div class="home-text">
-		<div class="home-greeting">
-			"Are you finding a good PC Or LAPTOP or ACCESSORIES?? Yes you're in the right place 
-			| B.I.Tech Solutions is the best Online Computer store in all over Hooghly District |"
-		</div>
+ <div class="slider-box">
+	<div id="slider">
+		<img src="b.jpg" alt="">
+		<img src="h.jpg" alt="">
+		<img src="gaming.jpg" alt="">
+		<img src="bg.jpg" alt="">
+		<img src="p.jpg" alt="">
+		<img src="v.jpg" alt="">
+		<img src="g.jpg" alt="">
+		<img src="bi.jpg" alt="">
+		
+
 	</div>
-</section>
+	<div class="indicators">
+		<span id="btn1" class="active"></span>
+		<span id="btn2"></span>
+		<span id="btn3"></span>
+	</div>
+</div>
 <marquee><h2>|GREAT DEALS ON PC| LAPTOP | REFURBISHED PC OR LAPTOP | ACCESSORIES | FOR SELLING  YOUR PC OR LAPTOP CONTACT HERE:6290517745 | FOR REPAIRING YOUR PC OR LAPTOP CONTACT HERE:6290517745 OR <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNrdNlkwFtgPxCCnxlvzqqfcWFXhFVGsplFpcvHmPjrPmZwcksvFCQjCkLcgdvxMFRGGSq">mail us</a> |</h2></marquee>
 		
 <section id="WHY US">
@@ -51,56 +62,65 @@
 </div>
 </div>
 
-
 </section>
 </section>
 
+<script>
+
+	var slide = document.getElementById("slider");
+	var btn1 = document.getElementById('btn1');
+	var btn2 = document.getElementById('btn2');
+	var btn3 = document.getElementById('btn3');
+
+
+	btn1.onclick = function () {
+		slide.style.transform = "translateX(0px)";
+		btn1.classList.add('active');
+		btn2.classList.remove('active');
+		btn3.classList.remove('active');
+		btn4.classList.remive('active');
+	};
+	btn2.onclick = function () {
+		slide.style.transform = "translateX(-100%)";
+		btn1.classList.remove('active');
+		btn2.classList.add('active');
+		btn3.classList.remove('active');
+		btn4.classList.remove('active');
+	};
+	btn3.onclick = function () {
+		slide.style.transform = "translateX(-200%)";
+		btn1.classList.remove('active');
+		btn2.classList.remove('active');
+		btn3.classList.add('active');
+		btn4.classList.remove('active');
+	};
+
+
+</script>
 <footer>
-			<div class="main-content">
-			  <div class="left box">
-				<h2>B.I.PVT.LTD</h2>
-				<div class="content">
-				  <p>B.I.PVT.LTD. is a private company which owns B.I. Tech Solutions Please follow the terms & conditions and check the payment section as well Thank you.</p>
-				</div>
-				<img src="logo1.png" height="200" width="250">
-			  </div>
-			  <div class="center box">
-				<h2></h2>
-				<div class="content">
-				  <div class="place">
-					<span class="fas fa-map-marker-alt"></span>
-					<span class="text"><a href="errort.html">
-						Terms and Conditions
-					  </a></span>
-					  <div class="place">
-						<span class="fas fa-map-marker-alt"></span>
-						<span class="text"><a href="https://banerjeeindustries.github.io/biportal.github.io/">
-							Banerjee industries Main Website
-						  </a></span>
-				  </div>
-				  <div class="phone">
-					<span class="fas fa-phone-alt"></span>
-					<span class="text">6290517745</span>
-				  </div>
-				  <div class="email">
-					<span class="fas fa-envelope"></span>
-					<span class="text"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNrdNlkwFtgPxCCnxlvzqqfcWFXhFVGsplFpcvHmPjrPmZwcksvFCQjCkLcgdvxMFRGGSq">mail us</a></span>
-				  </div>
-				  <div class="FEEDBACK">
-					<span class="fas fa-feedback"></span>
-					<span class="text"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfID2ii1gPcAkLVKDnI9OQ7-lGbe2tIOEdrowCco0anBn76vw/viewform">Feedback</a></span>
-				  </div>
-			  </div>
-				  </form>
-				</div>
-			  </div>
-			</div>
-			<div class="bottom">
-			  <center>
-				<span class="credit">Designed & Developed By <a href="https://www.facebook.com/profile.php?id=100012437807123">Snehasish Banerjee</a> | </span>
-				<span class="far fa-copyright"></span>Banerjee Industries Private Limited<span> 2021 All rights reserved.</span>
-			  </center>
-			</div>
-		  </footer>
-	</body>
-	</html>
+	<div class="footer-container">
+	  <div class="left-col">
+		<img src="logo1.png" alt="" class="logo">
+	
+		<p class="rights-text">© 2021 Created By Snehasish Banerjee All Rights Reserved | Banerjee Industries private Limited |</p>
+	    <p class="right-text"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJNrdNlkwFtgPxCCnxlvzqqfcWFXhFVGsplFpcvHmPjrPmZwcksvFCQjCkLcgdvxMFRGGSq">Click to Mail us</a></p>
+	    <p class="right-text"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfID2ii1gPcAkLVKDnI9OQ7-lGbe2tIOEdrowCco0anBn76vw/viewform">Feedback</a></p>
+		<p class="right-text"><a href="errort.html">Terms & Conditions</a></p>
+		<p class="right-text"><a href="errort.html">Payment Policy</a></p>
+		<p class="right-text"><a href="errort.html">Delivery & Installtion Policy</a></p>
+	</div>
+
+	  <div class="right-col">
+		<h1>UPDATED YOURSELF</h1>
+		<div class="border"></div>
+		<p>Enter Your Email to get our news and updates.</p>
+		<form action="" class="newsletter-form">
+		  <input type="text" class="txtb" placeholder="Enter Your Email">
+		  <input type="submit" class="btn" value="submit">
+		</form>
+	  </div>
+	</div>
+  </footer>
+</body>
+</html>
+
